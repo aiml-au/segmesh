@@ -1,0 +1,18 @@
+# [Data settings]
+data_dir: "./data/S3DIS_3cm_hdf5_Rendered/"
+raw_data_dir: "./data/S3DIS-Aligned-Raw/"
+
+# [Training settings]
+#ckpt_path: null  # Path to checkpoint if resuming training, otherwise null
+gpu: 0  # GPU ID
+degree: 3 # Degree of spherical harmonics
+max_nv: 1400000 # Maximum number of vertices allowed in a batch
+test_fold: 5 # Index of the test Area
+#Classnames for s3dis dataset :: 13 classes
+classnames: ['ceiling', 'floor', 'wall', 'beam', 'column', 'window', 'door', 'table', 'chair', 'sofa', 'bookcase', 'board', 'clutter']
+
+# [Hyperparameter settings]
+lr: 0.001 #Optimizer Learning Rate
+gamma: 0.98 #Scheduler Gamma Value
+batch_size: 16
+max_epochs: 300

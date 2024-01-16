@@ -1,0 +1,16 @@
+# Configuration for training on the coseg dataset
+
+# [Data settings]
+data_dir: "./data/coseg_aliens"
+num_classes: 3
+
+# [Training settings]
+ckpt_path: null  # Path to checkpoint if resuming training, otherwise null
+gpu: 0  # GPU ID
+degree: 3 # Degree of spherical harmonics
+
+# [Hyperparameter settings]
+lr: 0.001 #Optimizer Learning Rate
+gamma: 0.98 #Scheduler Gamma Value
+max_epochs: 300
+batch_size: 64

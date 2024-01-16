@@ -1,0 +1,19 @@
+
+# Configuration for training on the cubes dataset
+
+# [Data settings]
+data_dir: "./data/cubes"  # Replace with the actual path to your dataset
+
+# [Training settings]
+ckpt_path: null  # Path to checkpoint if resuming training, otherwise null
+gpu: 0  # GPU ID
+degree: 3 # Degree of spherical harmonics
+# Cubes dataset classnames :: 22 classes
+classnames: ['apple', 'bat', 'bell', 'brick', 'camel', 'car', 'carriage', 'chopper', 'elephant', 'fork', 'guitar', 'hammer', 'heart', 'horseshoe', 'key', 'lmfish', 'octopus', 'shoe', 'spoon', 'tree', 'turtle', 'watch']
+
+# [Hyperparameter settings]
+lr: 0.001 #Optimizer Learning Rate
+gamma: 0.98 #Scheduler Gamma Value
+weight_decay: 1e-5 #Optimizer weight decay
+max_epochs: 300
+batch_size: 64

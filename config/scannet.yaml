@@ -1,0 +1,18 @@
+# [Data settings]
+data_dir: "./data/ScanNet_2cm_hdf5_Rendered/" # Replace with the actual path to your dataset
+
+# [Training settings]
+ckpt_path: null  # Path to checkpoint if resuming training, otherwise null
+gpu: 0  # GPU ID
+degree: 3 # Degree of spherical harmonics
+max_nv: 1400000 # Maximum number of vertices allowed in a batch
+#Classnames for scannet dataset :: 20 classes
+classnames: ['wall', 'floor', 'cabinet', 'bed', 'chair', 'sofa', 'table', 'door',
+      'window', 'bookshelf', 'picture', 'counter', 'desk', 'curtain', 'refridgerator',
+      'shower curtain', 'toilet', 'sink', 'bathtub', 'otherfurniture']
+
+# [Hyperparameter settings]
+lr: 0.001 #Optimizer Learning Rate
+gamma: 0.98 #Scheduler Gamma Value
+max_epochs: 300
+batch_size: 12

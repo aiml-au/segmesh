@@ -1,0 +1,12 @@
+**/.idea**/
+**/.vscode**/
+**/.conda**/
+**/.venv**/
+**/__pycache__/
+**/*.egg-info/
+**/build/
+**/dist/
+data/**/*.zip
+data/**/
+/runs_scenes
+/runs_shapes

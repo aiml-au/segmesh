@@ -1,0 +1,17 @@
+# Configuration for training on the humans dataset
+
+# [Data settings]
+data_dir: "./data/human_seg"  # Replace with the actual path to your dataset
+
+# [Training settings]
+ckpt_path: null  # Path to checkpoint if resuming training, otherwise null
+gpu: 0  # GPU ID
+degree: 3 # Degree of spherical harmonics
+# Human dataset classnames :: 8 classes
+classnames: ['head', 'hand', 'forearm', 'upperarm', 'body', 'thigh', 'leg', 'foot']
+
+# [Hyperparameter settings]
+batch_size: 64
+lr: 0.001 #Optimizer Learning Rate
+gamma: 0.98 #Scheduler Gamma Value
+max_epochs: 300

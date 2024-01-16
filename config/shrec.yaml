@@ -1,0 +1,19 @@
+# Configuration for training on the shrec dataset
+
+# [Data settings]
+data_dir: "./data/shrec_16"  # Replace with the actual path to your dataset
+
+# [Training settings]
+ckpt_path: null  # Path to checkpoint if resuming training, otherwise null
+gpu: 0  # GPU ID
+degree: 3 # Degree of spherical harmonics
+# Shrec dataset classnames :: 30 classes
+classnames: ['alien', 'ants', 'armadillo', 'bird1', 'bird2', 'camel', 'cat', 'centaur', 'dino_ske', 'dinosaur', 'dog1', 'dog2', 'flamingo',
+'glasses', 'gorilla', 'hand', 'horse', 'lamp', 'laptop', 'man', 'myScissor', 'octopus', 'pliers', 'rabbit', 'santa', 'shark', 'snake',
+'spiders', 'two_balls', 'woman']
+
+# [Hyperparameter settings]
+lr: 0.001 #Optimizer Learning Rate
+gamma: 0.98 #Scheduler Gamma Value
+max_epochs: 300
+batch_size: 64
