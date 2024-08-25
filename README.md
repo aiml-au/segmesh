@@ -171,7 +171,7 @@ Replace `path/to/config_file.yaml` with the path to your dataset-specific config
 
 ### 5. Evaluation
 
-SegMesh provides a evaluation code structure, allowing easy integration and evaluation of various 3D datasets like S3DIS and ScanNet. The evaluation structure is designed to be flexible, enabling the addition of new datasets with minimal changes.
+SegMesh provides an evaluation code structure, allowing easy integration and evaluation of various 3D datasets like S3DIS and ScanNet. The evaluation structure is designed to be flexible, enabling the addition of new datasets with minimal changes.
 
 #### Evaluation Code Structure
 
@@ -221,4 +221,4 @@ Please also cite the original dataset if you use their data or our reprocessed d
 
 SegMesh is available for non-commercial internal research use by academic institutions or not-for-profit organisations only, free of charge. Please, see the [license](./license.txt) for further details. To the extent permitted by applicable law, your use is at your own risk and our liability is limited. Interested in a commercial license? For commercial queries, please email <aimlshop@adelaide.edu.au> with subject line "SegMesh Commercial License". 
 
-This is an [AIML Shop](https://shop.aiml.team) project.
+This is an [AIML Shop](https://aiml.shop) project.
